@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-formulario',
@@ -12,7 +13,7 @@ export class FormularioComponent implements OnInit {
   salarioDiario = 0;
   aguinaldo = 0;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -29,8 +30,7 @@ export class FormularioComponent implements OnInit {
   calcularAguinaldo() {
     this.aguinaldo = this.salarioDiario * this.dias;
     console.log(this.aguinaldo);
-    //const BMI = this.altura / Math.pow((this.altura / 100),2);
-    //this.router.navigate(['/resultado',BMI.toFixed(1)]);
+    this.router.navigate(['/resultado',this.aguinaldo.toFixed(2)]);
   }
 
 }
