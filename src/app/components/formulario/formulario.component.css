@@ -1,0 +1,49 @@
+.fondoItem {
+    background-color: #115cff28;
+    height: 130px;
+    border-radius: 20px;
+    color: white;
+}
+
+.sexo {
+    font-size: 40px;
+}
+
+.estilo-numero {
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: -30px;
+}
+
+.estilo-input {
+    font-size: 32px;
+    font-weight: 800;
+    font-family: monospace;
+    margin-top: -15px;
+}
+
+.cm {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: -10px;
+}
+
+.form-range {
+    padding: 0px 20px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background: #2294BB;
+}
+
+.suma-resta {
+    cursor: pointer;
+    background-color: #FF4C4F5E;
+    padding: 7px;
+    border-radius: 15px;
+    margin-left: 3px;
+}
+
+.sexo-desactivo {
+  background-color: #7D2F2F33;
+}

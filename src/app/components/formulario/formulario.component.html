@@ -1,3 +1,48 @@
-<div class="container">
-    <h1>Form</h1>
+<div class="row">
+    <div class="col-lg-4 offset-lg-4">
+        <h2 class="titulo">Calculadora de aguinaldo</h2>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="fondoItem">
+                    <div class="contenedor">
+                        <p>D&iacute;as de aguinaldo</p>
+                        <div class="estilo-numero">
+                            {{ dias }}
+                            <span class="cm">d&iacute;as</span>
+                        </div>
+                        <input type="range" (input)="cambiarDias($event)" [value]="dias" min="10" max="100" class="form-range" id="customRange1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="fondoItem">
+                    <div class="contenedor">
+                        <p>Salario mensual</p>
+                        <div class="estilo-input">
+                            <input type="number" id="salarioMensual" class="form-control form-control-lg" [(ngModel)]="salarioMensual" placeholder="Ingrese su salrio" (input)="calcularSalarioDiario()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="fondoItem">
+                    <div class="contenedor">
+                        <p>Salario diario</p>
+                        <div class="estilo-numero">
+                            {{ salarioDiario | number : '1.2-2'}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg 12">
+                <button (click)="calcularAguinaldo()" class="btn btn-primary btn-lg btn-block btn-color">Calcular</button>
+            </div>
+        </div>
+    </div>
 </div>

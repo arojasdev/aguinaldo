@@ -4,3 +4,34 @@ body {
     background-size: cover;
     height: 100vh;
 }
+
+.titulo {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.btn-color {
+    background-color: #2294BB;
+    border-color: #2294BB;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.btn-color:hover {
+    background-color: #2294BB;
+    border-color: #2294BB;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
